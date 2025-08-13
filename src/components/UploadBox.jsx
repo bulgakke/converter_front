@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react"
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://api.convert.beyonder.lol"
 
 export default function UploadBox() {
   const [isUploading, setIsUploading] = useState(false)
